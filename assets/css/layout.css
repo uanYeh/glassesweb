@@ -1,0 +1,248 @@
+/* header */
+
+.header{
+    padding: 30px 56px 30px 88px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+.header h1 a{
+    background-image: url(https://hexschool.github.io/webLayoutTraining1st/week3/logo.png);
+    display: block;
+    width: 80px;
+    height: 48px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-indent:101% ;
+}
+.header nav ul{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.header nav li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 8px 32px;
+}
+.header nav li a:hover{
+    background: #000;
+    border-radius: 5px;
+}
+@media (max-width: 768px) {
+    .header{ 
+        padding: 30px 19px 30px 39px;
+    }
+    .header nav li a{
+        padding: 8px 20px;
+    }
+}
+@media (max-width: 375px) {
+    .header{
+        padding: 0;
+        flex-direction: column;
+    }
+    .header h1 a{
+        width: 48px;
+        height: 29px;
+        background-size: 100%;
+        margin: 10px auto;
+    }
+    .header nav ul{
+        flex-wrap: wrap;
+    }
+    .header nav li{
+        width: 50%;
+        text-align: center;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        border: 1px solid #fff;
+    }
+}
+
+
+/*footer*/
+.footer .linkBox{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+.footer .container{
+    padding-top: 32px;
+    padding-bottom: 39px;
+}
+.footer .linkBox .menuList ,.footer .linkBox .linkList{
+    display: flex; 
+}
+.footer .menuList li {
+    margin-right: 12px;
+}
+.footer .menuList li a{
+    padding: 12px 12px;
+    text-decoration: none;
+    color: #fff;
+}
+.footer .menuList li a:hover{
+    background-color: #650300;
+    border-radius: 5px;
+}
+.footer .linkList li{
+    padding-left: 32px;
+}
+.footer .linkList a.icon_fb{
+    background: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/icon-fb.svg")  no-repeat center center;
+}
+.footer .linkList a.icon_ig{
+    background: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/icon-ig.svg)  no-repeat center center;
+}
+.footer .linkList a.icon_line{
+    background: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/icon-line.svg)  no-repeat center center;
+}
+.footer .linkList a{
+    width: 48px;
+    height: 48px;
+    display: block;
+    text-indent: 101%;
+    overflow: hidden;
+    flex-wrap: nowrap;  
+}
+.footer .addBox li.tel{
+    margin-bottom: 16px;  
+}
+.footer .addBox li.mail{
+    margin-bottom: 24px;
+}
+.footer .addBox li a{
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+.footer .tel a::before ,.footer .mail a::before{
+    content: "";
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    margin-right: 16px;
+}
+.footer .addBox a::before{
+    background: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/icon-phone.svg)  no-repeat center center;
+    background-size: 100%;
+}
+.footer .mail a::before{
+    background: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/icon-mail.svg)  no-repeat center center;
+    background-size: 100%;
+}
+.footer .footerBottom{
+    border-top: 1px solid #fff;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    padding-top: 32px;
+}
+.footer .copyrightList{
+    display: flex;
+    justify-content: end;
+    font-size: 0.87rem;
+    line-height: 1.5;
+}
+.footer .copyrightList li{
+    margin-left: 48px;
+}
+.footer .copyrightList a{
+    text-decoration: none;
+    color: #fff;
+}
+@media (max-width: 768px) { 
+    .footer .container{    
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+    .footer .menuList li {
+        margin-right: 10px;
+    }
+    .footer .menuList li a{
+        padding: 0px 10px;
+    }
+    .footer .linkList a{
+        width: 24px;
+        height: 24px;
+    }
+    .footer .linkList a.icon_fb ,.footer .linkList a.icon_ig ,.footer .linkList a.icon_line{
+        background-size: 100%;
+    } 
+    .footer .linkList li{
+        padding-left: 24px;
+    }
+    .footer .linkList li:first-child{
+        padding-left: 0px;
+    }
+    .footer .h6{
+        font-size: 1.25rem;
+    }
+    .footer .tel a::before ,.footer .mail a::before{
+        width: 24px;
+        height: 24px;
+        margin-right: 10px;
+    }
+    .footer .addBox li.tel{
+        margin-bottom: 12px;  
+    }
+    .footer .addBox li.mail{
+        margin-bottom: 20px;
+    }
+    .footer .footerBottom{
+        padding-top: 24px;
+    }
+    .footer .copyrightList li{
+        margin-left: 0px;
+    }
+    .footer .copyrightList a{
+        padding: 12px;
+    }
+}
+@media (max-width: 375px) {
+    .footer .container{    
+        padding-top: 25px;
+        padding-bottom: 24px;
+    }
+    .footer .linkBox .menuList{
+        display: none;
+    }
+    .footer .footerTop{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    .footer .h6{
+        font-size: 1rem;
+    }
+    .footer .tel a::before ,.footer .mail a::before{
+        width: 20px;
+        height: 20px;
+        margin-right: 5px;
+    }
+    .footer .addBox li.tel{
+        margin-bottom: 6px;  
+    }
+    .footer .addBox li.mail{
+        margin-bottom: 24px;
+    }
+    .footer .footerBottom{
+        flex-direction: column;
+        justify-content: start;
+        padding-top: 15px;
+    }
+    .footer .footerBottom p{
+        margin-bottom: 4px;
+    }
+    .footer .copyrightList{
+        flex-direction: column;
+    }
+    .footer .copyrightList a{
+        padding: 4px 0;
+    }
+}

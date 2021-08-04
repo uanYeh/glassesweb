@@ -1,0 +1,196 @@
+/********* 共同部份 *********/
+*, *::before, *::after{
+    box-sizing: border-box;
+  }
+
+body {
+    font-size: 16px;
+    font-family:'Noto Sans TC','Roboto', 'Source Sans Pro',-apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial,sans-serif;
+    line-height: 1.5;
+    transform: 0.3;
+}
+ h1, h2, h3, h4, h5, h6 ,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+    line-height: 1.5;
+  }
+img{
+      max-width: 100%;
+      height: auto;
+      vertical-align: middle;
+  }
+
+.warp{
+    width: 100%;
+} 
+.container {
+    max-width: 1140px; 
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  @media (max-width: 768px) {
+    .container{
+      max-width: 720px;
+    }
+  }
+  @media (max-width: 375px) {
+    .container{
+      max-width: 375px;
+      padding: 0 15px;
+    }
+  }
+
+/*大小*/
+.h1{
+    font-size: 4rem;/*64*/
+}
+.h2{
+    font-size: 3rem;/*48*/
+    font-weight: bold;
+    font-family: "Noto Sans TC";
+}
+.h3{
+    font-size: 1.5rem;/*24*/
+}
+.h4{
+    font-size: 1rem;/*16*/
+}
+.h5{
+    font-size: 1.25rem;/*20*/
+}
+.h6{
+    font-size: 2.25rem;/*36*/
+}
+@media (max-width: 768px) {
+    .h2{
+        font-size: 2rem;/*36*/
+    }
+}
+@media (max-width: 375px) {
+    .h2{
+        font-size: 1.5rem;/*24*/
+    }
+}
+
+/* 色彩  主primary 副sencdary 警告warning 危險dnger  */
+.bg-primary{
+    background: #FBF2F2;
+}
+.bg-sencdary{
+    background: #111619;
+}
+.bg-thirdary{
+    background: #AA0601;
+}
+.bg-fourth{
+    background: #650300;
+}
+.text-sencdary{
+    color: #AA0601;
+}
+.text-thirdary{
+    color: #650300;
+}
+/* 間距  8 16 24 40 60*/
+.mb-1{
+    margin-bottom: 8px;
+}
+.mb-2{
+    margin-bottom: 16px;
+}
+.mb-3{
+    margin-bottom: 24px;
+}
+.mb-4{
+    margin-bottom: 40px;
+}
+.mb-5{
+    margin-bottom: 60px;
+}
+.mb-6{
+    margin-bottom: 32px;
+}
+.ml-1{
+    margin-left: 16px;
+}
+.ptb-1{
+    padding-top: 60px;
+    padding-bottom: 80px;
+    /*首頁的每個senction內距*/
+}
+.ptb-2{
+    padding-top: 96px;
+    padding-bottom: 106px;
+    /*每個inner內距*/
+}
+@media (max-width: 768px) {
+    .ptb-1{
+        padding-top: 40px;
+        padding-bottom: 56px;
+        /*首頁的每個senction內距*/
+    }
+    .ptb-2{
+        padding-top: 60px;
+        padding-bottom: 96px;
+        /*每個inner內距*/
+    }
+    .mb-4{
+        margin-bottom: 32px;
+    }
+}
+@media (max-width: 375px) {
+    .ptb-1{
+        padding-top: 32px;
+        padding-bottom: 40px;
+        /*每個內距*/
+    }
+    .ptb-2{
+        padding-top: 28px;
+        padding-bottom: 56px;
+        /*每個inner內距*/
+    }
+    .mb-4{
+        margin-bottom: 20px;
+    }
+}
+/*page*/
+.pagination{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+.page .page-link{
+    position: relative;
+    display: block;
+    color: #555;
+    text-decoration: none;
+    background-color: #fff;
+    border: 1px solid #555;
+    transition: color .15s;
+    padding: 12px 16px;
+}
+.pagination .active .page-link{
+    background-color: #000 ;
+    color: #fff;
+}
+.pagination .disabled .page-link{
+    background-color: #F2F2F2;
+}
+.page-item:not(:first-child) .page-link {
+    margin-left: -1px;
+}
+@media (max-width: 375px) {
+    .page{
+        font-size: 16px;
+    }
+    .page .page-link{
+        padding: 12px 15px;
+    }
+    .page li:first-child .page-link,.page li:last-child .page-link{
+        padding: 12px 11px;/*縮小會跑位*/
+    }
+    .blog li.blogItem:last-child{
+        margin-bottom: 40px;
+    }
+}
+
+
