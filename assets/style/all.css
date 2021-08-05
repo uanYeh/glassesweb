@@ -1314,6 +1314,33 @@ img {
   .blog ul.blogList li {
     margin-bottom: 20px; } }
 
+/*bolgsContent*/
+.blogContent .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.blogContent .contentLeft {
+  width: 80%;
+  margin-bottom: 30px; }
+  .blogContent .contentLeft .path a {
+    text-decoration: none;
+    color: #000; }
+  .blogContent .contentLeft .path a.disabled {
+    color: #AA0601; }
+  .blogContent .contentLeft .titleSencd {
+    font-size: 1.75rem; }
+  .blogContent .contentLeft .txt a {
+    text-decoration: none; }
+
+.blogContent .contentRight {
+  width: 20%; }
+  .blogContent .contentRight .tags {
+    font-size: 1.75rem; }
+
 /*qa*/
 .qa .title {
   font-size: 2rem; }
