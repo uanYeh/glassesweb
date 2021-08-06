@@ -160,6 +160,9 @@ img {
 .ml-1 {
   margin-left: 16px; }
 
+.mr-1 {
+  margin-right: 16px; }
+
 .ptb-1 {
   padding-top: 60px;
   padding-bottom: 80px;
@@ -1316,6 +1319,8 @@ img {
 
 /*bolgsContent*/
 .blogContent .container {
+  padding-top: 8px;
+  padding-bottom: 130px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1323,23 +1328,228 @@ img {
       -ms-flex-pack: justify;
           justify-content: space-between; }
 
-.blogContent .contentLeft {
-  width: 80%;
+.blogContent .h2 {
+  line-height: 70px; }
+
+.blogContent .titleSencd {
+  font-size: 1.8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .blogContent .titleSencd span {
+    color: #6C6C6C; }
+
+.blogContent .content {
+  width: 78%;
+  margin-right: 2%;
   margin-bottom: 30px; }
-  .blogContent .contentLeft .path a {
+  .blogContent .content .path a {
     text-decoration: none;
     color: #000; }
-  .blogContent .contentLeft .path a.disabled {
+  .blogContent .content .path a.disabled {
     color: #AA0601; }
-  .blogContent .contentLeft .titleSencd {
+  .blogContent .content .titleSencd {
     font-size: 1.75rem; }
-  .blogContent .contentLeft .txt a {
-    text-decoration: none; }
+  .blogContent .content .txt a {
+    text-decoration: none;
+    font-weight: bold; }
+  .blogContent .content .txtBox {
+    width: 100%; }
+    .blogContent .content .txtBox img {
+      width: 100%; }
+    .blogContent .content .txtBox p {
+      opacity: 0.6; }
+  .blogContent .content .linkBox {
+    margin-top: 8px;
+    margin-bottom: 24px;
+    display: inline-block; }
+    .blogContent .content .linkBox a.h5 {
+      color: #000;
+      text-decoration: none;
+      font-weight: bold; }
+    .blogContent .content .linkBox ul {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: start; }
+    .blogContent .content .linkBox li {
+      margin-right: 20px; }
+    .blogContent .content .linkBox a.icon_fb, .blogContent .content .linkBox .icon_ig {
+      display: block;
+      text-indent: 101%;
+      overflow: hidden;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+      width: 24px;
+      height: 24px; }
+    .blogContent .content .linkBox a.icon_fb {
+      background: url("https://hexschool.github.io/webLayoutTraining1st/week3/logo-facebook.svg") no-repeat center center; }
+    .blogContent .content .linkBox a.icon_ig {
+      background: url("https://hexschool.github.io/webLayoutTraining1st/week3/logo-instagram.svg") no-repeat center center; }
+  .blogContent .content .arrowBox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .blogContent .content .arrowBox a {
+      text-decoration: none;
+      color: #000; }
+    .blogContent .content .arrowBox a.next, .blogContent .content .arrowBox a.prev {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+    .blogContent .content .arrowBox a.prev:before {
+      content: "";
+      display: inline-block;
+      width: 24px;
+      height: 24px;
+      background: url("../../images/icon-prev.svg") no-repeat center center;
+      background-size: 100%;
+      margin-right: 12px; }
+    .blogContent .content .arrowBox a.next::after {
+      content: "";
+      display: inline-block;
+      width: 24px;
+      height: 24px;
+      background: url("https://hexschool.github.io/webLayoutTraining1st/week3/icon-arrow.svg") no-repeat center center;
+      background-size: 100%;
+      margin-left: 12px; }
 
-.blogContent .contentRight {
-  width: 20%; }
-  .blogContent .contentRight .tags {
-    font-size: 1.75rem; }
+.blogContent .tagBox {
+  width: 20%;
+  margin-top: 78px; }
+  .blogContent .tagBox .tags {
+    font-size: 1.75rem;
+    font-weight: bold; }
+  .blogContent .tagBox p {
+    position: relative;
+    padding-left: 50px;
+    margin-bottom: 14px; }
+  .blogContent .tagBox p::before {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    content: "";
+    display: inline-block;
+    width: 38px;
+    height: 28px;
+    background: url("https://hexschool.github.io/webLayoutTraining1st/week3/icon-tag.svg") no-repeat center center;
+    background-size: 100%; }
+  .blogContent .tagBox a {
+    font-size: 1.5rem;
+    display: inline-block;
+    margin-bottom: 8px;
+    font-weight: bold; }
+
+@media (max-width: 768px) {
+  .blogContent .container {
+    padding-bottom: 66px; }
+  .blogContent .h2 {
+    font-size: 2rem;
+    line-height: 46px; }
+  .blogContent h2.mb-1 {
+    margin-bottom: 4px; }
+  .blogContent .txtBox .mb-3 {
+    margin-bottom: 16px; }
+  .blogContent .txtBox .mb-4 {
+    margin-bottom: 24px; }
+  .blogContent .linkBox {
+    margin-top: 4px;
+    margin-bottom: 16px; }
+    .blogContent .linkBox a.h5 {
+      font-size: 1rem; }
+    .blogContent .linkBox a.icon_fb, .blogContent .linkBox .icon_ig {
+      width: 20px;
+      height: 20px; }
+  .blogContent .content .arrowBox a {
+    font-size: 1rem; }
+  .blogContent .content .arrowBox a.next::after, .blogContent .content .arrowBox a.prev::before {
+    width: 16px;
+    height: 16px; }
+  .blogContent .content .txtBox {
+    font-size: 1rem; }
+  .blogContent hr.mb-3 {
+    margin-bottom: 16px; } }
+
+@media (max-width: 375px) {
+  .blogContentNav {
+    display: block; }
+    .blogContentNav nav {
+      width: 100%; }
+    .blogContentNav .navBlogList {
+      width: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      margin: 0 1%; }
+    .blogContentNav .navBlogList li {
+      width: 23%;
+      margin: 0 1%;
+      font-size: 1rem;
+      padding: 16px 0px;
+      text-align: center; }
+    .blogContentNav .navBlogList li:last-child {
+      width: 25%; }
+    .blogContentNav .search a {
+      display: none;
+      font-size: 1rem; }
+    .blogContentNav h2.mb-1 {
+      margin-bottom: unset; }
+  .blogContent .container {
+    padding-bottom: 56px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .blogContent .content {
+    width: 100%; }
+    .blogContent .content .titleSencd {
+      font-size: 1rem;
+      margin-bottom: 20px; }
+    .blogContent .content .linkBox {
+      margin-top: 0;
+      margin-bottom: 16px; }
+    .blogContent .content hr.mb-3 {
+      margin-bottom: 10px; }
+    .blogContent .content .arrowBox {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+      .blogContent .content .arrowBox a.next {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: reverse;
+            -ms-flex-direction: row-reverse;
+                flex-direction: row-reverse;
+        -webkit-box-pack: end;
+            -ms-flex-pack: end;
+                justify-content: flex-end; }
+  .blogContent h2.mb-1 {
+    margin-bottom: 0px; }
+  .blogContent .tagBox {
+    width: 100%;
+    margin-top: unset; }
+    .blogContent .tagBox P {
+      margin-bottom: 8px;
+      font-size: 1.25rem; }
+    .blogContent .tagBox a {
+      font-size: 1rem; } }
 
 /*qa*/
 .qa .title {
@@ -1376,5 +1586,146 @@ img {
     margin-left: unset; }
   .qa .qaItem .mb-2 {
     margin-bottom: 8px; } }
+
+/*pro*/
+.subnav {
+  font-weight: bold; }
+  .subnav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    border-left: 1px solid #DCDCDC; }
+    .subnav ul li {
+      width: 33.333%;
+      border-right: 1px solid #DCDCDC;
+      border-bottom: 8px solid #fff; }
+    .subnav ul li:hover, .subnav ul li.active {
+      border-bottom: 8px solid #AA0601; }
+    .subnav ul a {
+      text-decoration: none;
+      display: block;
+      font-size: 2rem;
+      color: #000;
+      padding-top: 27px;
+      padding-bottom: 27px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+    .subnav ul li:nth-child(1) a::before,
+    .subnav ul li:nth-child(2) a::before,
+    .subnav ul li:nth-child(3) a::before {
+      content: "";
+      display: inline-block;
+      width: 44px;
+      height: 44px;
+      margin-right: 10px; }
+    .subnav ul li:nth-child(1) a::before {
+      background: url("https://hexschool.github.io/webLayoutTraining1st/week3/icon-diamond-black.svg") no-repeat center center;
+      background-size: 100%; }
+    .subnav ul li:nth-child(2) a::before {
+      background: url("https://hexschool.github.io/webLayoutTraining1st/week3/icon-sun-black.svg") no-repeat center center;
+      background-size: 100%; }
+    .subnav ul li:nth-child(3) a::before {
+      background: url("https://hexschool.github.io/webLayoutTraining1st/week3/icon-thunder-black.svg") no-repeat center center;
+      background-size: 75%; }
+
+.subbanner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .subbanner .picBg-1, .subbanner .picBg-2 {
+    width: 50%; }
+    .subbanner .picBg-1 img, .subbanner .picBg-2 img {
+      width: 100%;
+      height: 304px; }
+
+.proContent {
+  padding-top: 80px;
+  margin-bottom: 160px; }
+  .proContent ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 0 -1% -104px -1%; }
+    .proContent ul li {
+      width: 31.33%;
+      margin: 0 1% 104px 1%; }
+      .proContent ul li img {
+        width: 100%;
+        max-height: 204px; }
+  .proContent p.h2 {
+    font-size: 2.62rem;
+    text-align: center; }
+    .proContent p.h2 span {
+      font-size: 2rem; }
+  .proContent .txtBox {
+    text-transform: uppercase;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .proContent .txtBox .price {
+      font-weight: bold; }
+  .proContent .colorBox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start; }
+    .proContent .colorBox .colorBg-1, .proContent .colorBox .colorBg-2 {
+      border-radius: 4px;
+      width: 24px;
+      height: 24px; }
+    .proContent .colorBox .colorBg-1 {
+      background-color: #5F3E2D;
+      margin-right: 8px; }
+    .proContent .colorBox .colorBg-2 {
+      background-color: #B75929; }
+
+@media (max-width: 768px) {
+  .subnav ul a {
+    font-size: 1.5rem;
+    padding-top: 14px;
+    padding-bottom: 6px; }
+  .subnav ul li:nth-child(1) a::before,
+  .subnav ul li:nth-child(2) a::before,
+  .subnav ul li:nth-child(3) a::before {
+    width: 30px;
+    height: 30px; }
+  .subbanner .picBg-1, .subbanner .picBg-2 {
+    width: 50%; }
+    .subbanner .picBg-1 img, .subbanner .picBg-2 img {
+      background-size: cover; }
+  .proContent {
+    padding-top: 56px;
+    margin-bottom: 96px; }
+    .proContent p.h2 {
+      font-size: 2rem;
+      margin-bottom: 32px; }
+      .proContent p.h2 span {
+        font-size: 1.5rem; }
+    .proContent ul li {
+      width: 48%;
+      margin-bottom: 72px; } }
 
 /*# sourceMappingURL=all.css.map */
